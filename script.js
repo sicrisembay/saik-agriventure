@@ -85,6 +85,25 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }, 2000);
 });
 
+// News section functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.querySelector('.news-pagination .btn');
+    
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // Simulate loading more posts
+            this.textContent = 'Loading...';
+            this.disabled = true;
+            
+            setTimeout(() => {
+                alert('This is a demo. In a real implementation, this would load more blog posts from your content management system or blog platform.');
+                this.textContent = 'Load More Posts';
+                this.disabled = false;
+            }, 1500);
+        });
+    }
+});
+
 // Email validation function
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -107,7 +126,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.about-card, .service-card').forEach(card => {
+document.querySelectorAll('.about-card, .service-card, .news-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
