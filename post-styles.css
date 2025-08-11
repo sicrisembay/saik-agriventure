@@ -1,0 +1,358 @@
+/* Blog Post Specific Styles */
+
+/* Post Header */
+.blog-post {
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post-category {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a7c59;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.post-title {
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.post-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.post-author .read-time {
+    color: #4a7c59;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #4a7c59;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Post Content */
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-image {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.post-image .image-placeholder {
+    background: #f8fafa;
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.post-image .image-placeholder span {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.post-image .image-placeholder p {
+    color: #4a7c59;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.post-body {
+    line-height: 1.8;
+    color: #333;
+}
+
+.post-body h2 {
+    color: #2c5530;
+    font-size: 2rem;
+    margin: 2.5rem 0 1rem;
+    font-weight: 600;
+}
+
+.post-body h3 {
+    color: #2c5530;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+}
+
+.post-body p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.post-body ul, 
+.post-body ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.post-body li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.post-body blockquote {
+    background: #f8fafa;
+    border-left: 4px solid #4a7c59;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.post-body blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #4a7c59;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.post-body a {
+    color: #4a7c59;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.post-body a:hover {
+    border-bottom-color: #4a7c59;
+}
+
+/* Post Footer */
+.post-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.post-tags {
+    margin-bottom: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #f8fafa;
+    color: #4a7c59;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.post-share {
+    text-align: center;
+}
+
+.post-share p {
+    margin-bottom: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    background: #4a7c59;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.share-btn:hover {
+    background: #3d6b47;
+    transform: translateY(-2px);
+}
+
+/* Post Navigation */
+.post-navigation {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav-prev,
+.nav-next {
+    padding: 1.5rem;
+    background: #f8fafa;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.nav-prev:hover,
+.nav-next:hover {
+    transform: translateY(-2px);
+}
+
+.nav-next {
+    text-align: right;
+}
+
+.nav-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-title {
+    display: block;
+    color: #2c5530;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.back-to-news {
+    text-align: center;
+}
+
+/* Read More Button for News Cards */
+.read-more-btn {
+    display: inline-block;
+    color: #4a7c59;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.read-more-btn:hover {
+    border-bottom-color: #4a7c59;
+}
+
+/* Navigation Logo Link */
+.nav-logo a {
+    color: #2c5530;
+    text-decoration: none;
+}
+
+.nav-logo a:hover {
+    color: #4a7c59;
+}
+
+/* Responsive Design for Blog Posts */
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 2.5rem;
+    }
+    
+    .post-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .post-author {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-next {
+        text-align: left;
+    }
+    
+    .share-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .share-btn {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-title {
+        font-size: 2rem;
+    }
+    
+    .post-body h2 {
+        font-size: 1.5rem;
+    }
+    
+    .post-body h3 {
+        font-size: 1.3rem;
+    }
+    
+    .post-image .image-placeholder {
+        padding: 2rem;
+    }
+    
+    .post-image .image-placeholder span {
+        font-size: 3rem;
+    }
+}
